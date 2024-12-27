@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verify Your Email - LernOn</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .email-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .logo {
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      max-width: 150px;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #333333;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #555555;
+      line-height: 1.6;
+    }
+
+    .verify-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #007bff;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 4px;
+    }
+
+    .verify-button:hover {
+      background-color: #0056b3;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #888888;
+    }
+
+    .footer a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .spacer {
+      height: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="email-container">
+    <!-- Logo Placeholder -->
+    <div class="logo">
+      <img src="LOGO_URL" alt="LernOn Logo">
+    </div>
+
+    <h1>Welcome to LernOn.io!</h1>
+    <p>Hi {{ first_name }},</p>
+    <p>
+      Thank you for signing up with LernOn.io. To get started, please verify your email address by clicking the button below:
+    </p>
+
+    <a href="{{ verification_url }}" class="verify-button">Verify Your Email</a>
+
+    <p class="spacer"></p>
+    <p>
+      If the button above doesn't work, you can copy and paste the following link into your browser:
+    </p>
+    <p style="word-wrap: break-word;">
+      <a href="{{ verification_url }}">{{ verification_url }}</a>
+    </p>
+
+    <p>
+      Once your email is verified, you can log in to your account and explore everything LernOn has to offer.
+    </p>
+
+    <div class="footer">
+      <p>
+        Need help? Visit our <a href="https://lernon.io/support">Support Center</a> or contact us at 
+        <a href="mailto:support@lernon.io">support@lernon.io</a>.
+      </p>
+      <p>&copy; 2024 LernOn.io. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>
